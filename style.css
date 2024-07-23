@@ -156,6 +156,10 @@ button {
     font-family: "Bruno Ace SC", serif;
     padding: 12px 24px;
     border-radius: 32px;
+    cursor: pointer;
+}
+button:hover {
+    filter: brightness(70%);
 }
 ul {
     list-style: none;
