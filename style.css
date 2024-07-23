@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* style.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bruno Ace SC", Arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+button {
+    font-size: 16px;
+    font-family: "Bruno Ace SC", serif;
+    padding: 12px 24px;
+    border-radius: 32px;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    font-size: 128px;
+    color: #00ffa3;
+    font-weight: 400;
+    text-align: right;
+}
+h2 {
+    font-size: 64px;
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.bg-dark {
+    background-color: #000;
+}
+.d-flex {
+    display: flex;
+}
+/* navbar */
+navbar ul {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* banner */
+.banner {
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 32px;
+}
+.banner img {
+    width: 48%;
+}
+.banner .banner-content {
+    width: 48%;
+}
+.banner .reverse-part {
+    text-align: right;
+}
+/* introduction */
+.bg-wave {
+    background-image: url(/images/background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.introduction {
+    gap: 24px;
+    justify-content: space-between;
+}
+.introduction-content {
+    width: 40%;
+    flex-direction: column;
+}
+.introduction-content h2 {
+    padding-bottom: 36px;
+}
+.introduction-content p {
+    padding-bottom: 32px;
+    font-size: 24px;
+}
+.introduction .gallery {
+    width: 55%;
+}
+.introduction .gallery img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+/* about */
+.about {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    color: #000;
+}
+.about-me {
+    justify-content: space-between;
+}
+.about-me .card-set {
+    width: 48%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+.about-me .card {
+    width: 48%;
+    padding: 16px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.about-me h3 {
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+.about-content {
+    width: 40%;
+}
+.about-content h2 {
+    padding-bottom: 36px;
+}
+.about-content p {
+    font-size: 24px;
+}
+/* contact */
+.contact {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    justify-content: space-between;
+}
+.contact-title img{
+    margin-left: 16px;
+    display: inline-block;    
+}
+.contact-title {
+    align-items: center;
+    justify-content: center;
+}
+.social-wrap {
+    gap: 20px;
+    justify-content: space-between;
+}
+/* product */
+.product {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    color: #000;
+}
+.product-title {
+    flex-direction: row-reverse;
+    padding-bottom: 16px;
+}
+.product-title h2 {
+    width: 58%;
+}
+.product-wrap {
+    justify-content: space-between;
+    gap: 24px;
+}
+.product-wrap > img {
+    width: 31%;
+}
+.product-part {
+    width: 65%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+}
+.product-card {
+    justify-content: space-between;
+    gap: 24px;
+}
+.product-card .content {
+    flex-direction: column;    
+    justify-content: space-between;
+}
+.product-card .content button {
+    background-color: #000;
+    color: #fff;
+}
+.product-image {
+    justify-content: space-between;
+    gap: 24px;
+}
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+}
